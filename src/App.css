@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+    min-height: 100vh;
+    background-color: rgba(5, 5, 44, 0.856);
+    font-family: 'Roboto','San Francisco';
+}
+
+#root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#order {
+    background-color: #fff;
+    width: 350px;
+    min-height: 450px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 20px;
+}
+
+.items-info,
+.shipping-price,
+.total-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h4{
+    font-size: 1.102rem;
+    letter-spacing: .1cap;
+    margin-bottom: 15px;
+}
+.items-info p, .shipping-price p{
+    font-size: large;
+    color: #808080;
+    font-weight: 500;
+}
+
+.shipping-price .price{
+    color: rgb(20, 220, 20);
+}
+
+.total-price p{
+    font-size: 16pt;
+    font-weight: bold;
+}
+.items {
+    max-height: 190px;
+    overflow: auto;
+    flex: 1;
+}
+
+
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.item-description {
+    flex: 1;
+    margin: auto 10px;
+    line-height: 1.5rem;
+}
+
+.image {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin: 5px 10px;
+}
+
+i {
+    color: #ddd;
+    font-size: large;
+}
+
+.shipping-price {
+    border-bottom: 1px solid #ddd;
+    padding: 0 0 25px 0;
+}
+
+button{
+    background-color: rgb(55, 55, 215);
+    color: #fff;
+    padding: 12px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: larger;
+}
+
+@media (max-width: 760px){
+    #order{
+        max-width: 80%;
+    }
+}
